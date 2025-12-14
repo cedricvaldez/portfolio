@@ -17,7 +17,7 @@ const ScrambleText = ({ text, isHovered }: { text: string; isHovered: boolean })
       setDisplayText((prev) =>
         prev
           .split('')
-          .map((char, index) => {
+          .map((_char, index) => {
             if (index < iterations) {
               return text[index];
             }
